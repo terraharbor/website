@@ -1,0 +1,119 @@
+import { Container, Typography, Accordion, AccordionSummary, AccordionDetails, Box } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { colors } from '../theme/colors';
+
+const faqs = [
+  { 
+    q: 'Pourquoi utiliser TerraHarbor au lieu de S3 ?', 
+    a: 'TerraHarbor offre une gouvernance avancée avec contrôle d\'accès granulaire, audit complet, versioning intelligent et chiffrement automatique. Contrairement à S3, vous bénéficiez d\'une interface dédiée et de fonctionnalités spécialement conçues pour Terraform.' 
+  },
+  { 
+    q: 'Comment fonctionne le chiffrement ?', 
+    a: 'Nous utilisons AES-256-GCM avec gestion automatique des clés. Chaque fichier state est chiffré individuellement avec une clé unique dérivée de votre configuration Terraform, garantissant une sécurité maximale.' 
+  },
+  { 
+    q: 'Peut-on déployer automatiquement ?', 
+    a: 'Absolument ! TerraHarbor est conçu pour s\'intégrer parfaitement dans vos pipelines CI/CD. Déployez avec Docker, Kubernetes, ou nos charts Helm officiels avec une configuration minimale.' 
+  },
+  {
+    q: 'Quelle est la compatibilité avec Terraform ?',
+    a: 'TerraHarbor implémente l\'API standard Terraform HTTP Backend, garantissant une compatibilité totale avec toutes les versions de Terraform. Aucune modification de vos configurations existantes n\'est nécessaire.'
+  }
+];
+
+export default function FAQSection() {
+  return (
+    <Box 
+      id="faq" 
+      sx={{ 
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        py: { xs: 4, md: 6 }, 
+        bgcolor: colors.neutral.white 
+      }}>
+      <Container maxWidth="md">
+        <Box sx={{ textAlign: 'center', mb: 8 }}>
+          <Typography 
+            variant="h3" 
+            sx={{
+              fontWeight: 700,
+              color: colors.neutral.black,
+              mb: 2,
+              fontSize: { xs: '2rem', md: '2.5rem' }
+            }}
+          >
+            Questions Fréquentes
+          </Typography>
+          <Typography 
+            variant="h6" 
+            sx={{
+              color: colors.neutral.darkGrey,
+              fontWeight: 400,
+              maxWidth: 600,
+              mx: 'auto'
+            }}
+          >
+          </Typography>
+        </Box>
+
+        <Box sx={{ maxWidth: 800, mx: 'auto' }}>
+          {faqs.map((faq, index) => (
+            <Accordion 
+              key={index} 
+              elevation={0}
+              sx={{ 
+                mb: 2,
+                bgcolor: colors.tint.tint5,
+                border: `1px solid ${colors.neutral.lightGrey}`,
+                borderRadius: 2,
+                '&:before': { display: 'none' },
+                '&.Mui-expanded': {
+                  margin: '0 0 16px 0',
+                  bgcolor: colors.neutral.white,
+                  borderColor: colors.primary.main,
+                  boxShadow: `0 4px 12px ${colors.neutral.grey}20`
+                }
+              }}
+            >
+              <AccordionSummary 
+                expandIcon={
+                  <ExpandMoreIcon sx={{ color: colors.primary.main }} />
+                }
+                sx={{
+                  py: 2,
+                  px: 3,
+                  '& .MuiAccordionSummary-content': {
+                    margin: '12px 0'
+                  }
+                }}
+              >
+                <Typography 
+                  variant="h6" 
+                  sx={{
+                    fontWeight: 600,
+                    color: colors.neutral.black,
+                    fontSize: '1.1rem'
+                  }}
+                >
+                  {faq.q}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails sx={{ px: 3, pb: 3 }}>
+                <Typography 
+                  sx={{
+                    color: colors.neutral.darkGrey,
+                    lineHeight: 1.6,
+                    fontSize: '1rem'
+                  }}
+                >
+                  {faq.a}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </Box>
+      </Container>
+    </Box>
+  );
+}
