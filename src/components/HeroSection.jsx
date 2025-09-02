@@ -132,7 +132,7 @@ export default function HeroSection() {
               }}
             >
               <img 
-                src="/hero.png" 
+                src={`${import.meta.env.BASE_URL}hero.png`} 
                 alt="TerraHarbor Hero" 
                 style={{
                   width: '100%',
