@@ -28,7 +28,7 @@ export default function Navbar() {
       }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
           <img 
-            src="/logo3.jpg" 
+            src={`${import.meta.env.BASE_URL}logo3.jpg`} 
             alt="TerraHarbor Logo" 
             width={60} 
             height={60}
