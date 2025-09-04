@@ -39,18 +39,17 @@ export default function CTASection() {
                   lineHeight: 1.2
                 }}
               >
-                Prêt à sécuriser vos{' '}
+                Ready to secure your{' '}
                 <Box component="span" sx={{ 
                   background: `linear-gradient(45deg, ${colors.tint.tint1}, ${colors.neutral.white})`,
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
                 }}>
-                  infrastructures Terraform
+                  Terraform infrastructures
                 </Box>{' '}
                 ?
               </Typography>
-              
               <Typography 
                 variant="h5" 
                 sx={{
@@ -60,8 +59,7 @@ export default function CTASection() {
                   lineHeight: 1.5
                 }}
               >
-                Rejoignez les équipes qui font confiance à TerraHarbor pour gérer 
-                state files avec sécurité et simplicité.
+                Join the teams that trust TerraHarbor to manage state files with security and simplicity.
               </Typography>
             </Box>
           </Grid>
@@ -95,7 +93,7 @@ export default function CTASection() {
                   }
                 }}
               >
-                Commencer gratuitement
+                Let's Start
               </Button>
               
             

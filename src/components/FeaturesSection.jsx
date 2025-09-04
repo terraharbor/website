@@ -10,33 +10,33 @@ import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 
 const features = [
   { 
-    title: 'Stockage Sécurisé', 
-    desc: 'Chiffrement AES-256-GCM avec gestion automatique des clés.',
+    title: 'Secure Storage', 
+    desc: 'AES-256-GCM encryption with automatic key management.',
     icon: <LockOutlinedIcon sx={{ fontSize: 32, color: colors.primary.main, mb: 1 }} />
   },
   { 
     title: 'Versioning & Diff', 
-    desc: 'Suivi des versions automatique, comparaison visuelle et restauration en un clic.',
+    desc: 'Automatic version tracking, visual comparison, and one-click restore.',
     icon: <HistoryEduOutlinedIcon sx={{ fontSize: 32, color: colors.primary.main, mb: 1 }} />
   },
   { 
-    title: 'Contrôle d\'accès', 
-    desc: 'Droits granulaires configurables par projet, utilisateur ou équipe avec audit complet.',
+    title: "Access Control", 
+    desc: 'Granular permissions configurable by project, user, or team with full audit.',
     icon: <VpnKeyOutlinedIcon sx={{ fontSize: 32, color: colors.primary.main, mb: 1 }} />
   },
   { 
-    title: 'Audit et Historique', 
-    desc: 'Journalisation complète des actions et traçabilité des accès aux fichiers state.',
+    title: 'Audit & History', 
+    desc: 'Comprehensive logging of actions and traceability of state file access.',
     icon: <ListAltOutlinedIcon sx={{ fontSize: 32, color: colors.primary.main, mb: 1 }} />
   },
   { 
-    title: 'API REST Complète', 
-    desc: 'Endpoints Terraform officiels avec authentification JWT et documentation interactive.',
+    title: 'Full REST API', 
+    desc: 'Official Terraform endpoints with HTTP basic authentication.',
     icon: <ApiOutlinedIcon sx={{ fontSize: 32, color: colors.primary.main, mb: 1 }} />
   },
   { 
-    title: 'Interface Moderne', 
-    desc: 'Dashboard React intuitif pour gérer projets, équipes et permissions facilement.',
+    title: 'Modern Interface', 
+    desc: 'Intuitive React dashboard to easily manage projects, teams, and permissions.',
     icon: <DashboardOutlinedIcon sx={{ fontSize: 32, color: colors.primary.main, mb: 1 }} />
   },
 ];
@@ -61,7 +61,7 @@ export default function FeaturesSection() {
               fontSize: { xs: '2rem', md: '2.5rem' }
             }}
           >
-            Pourquoi utiliser TerraHarbor ?
+            Why do you need TerraHarbor?
           </Typography>
           <Typography 
             variant="h6" 
@@ -72,7 +72,7 @@ export default function FeaturesSection() {
               mx: 'auto'
             }}
           >
-            Tout ce dont vous avez besoin pour gérer vos infrastructures Terraform en toute sécurité
+                Everything you need to manage your Terraform infrastructures securely
           </Typography>
         </Box>
 

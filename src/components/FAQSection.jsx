@@ -4,20 +4,20 @@ import { colors } from '../theme/colors';
 
 const faqs = [
   { 
-    q: 'Pourquoi utiliser TerraHarbor au lieu de S3 ?', 
-    a: 'TerraHarbor offre une gouvernance avancée avec contrôle d\'accès granulaire, audit complet, versioning intelligent et chiffrement automatique. Contrairement à S3, vous bénéficiez d\'une interface dédiée et de fonctionnalités spécialement conçues pour Terraform.' 
+    q: 'Why use TerraHarbor instead of AWS S3, for example?', 
+    a: 'TerraHarbor offers advanced governance with granular access control, full audit, smart versioning, and automatic encryption. Unlike other remote backends, you get a dedicated interface and features designed specifically for Terraform.' 
   },
   { 
-    q: 'Comment fonctionne le chiffrement ?', 
-    a: 'Nous utilisons AES-256-GCM avec gestion automatique des clés. Chaque fichier state est chiffré individuellement avec une clé unique dérivée de votre configuration Terraform, garantissant une sécurité maximale.' 
+    q: 'How does encryption work?', 
+    a: 'We use AES-256-GCM with automatic key management. Each state file is encrypted individually with a unique key derived from your Terraform configuration, ensuring maximum security.' 
   },
   { 
-    q: 'Peut-on déployer automatiquement ?', 
-    a: 'Absolument ! TerraHarbor est conçu pour s\'intégrer parfaitement dans vos pipelines CI/CD. Déployez avec Docker, Kubernetes, ou nos charts Helm officiels avec une configuration minimale.' 
+    q: 'Can I deploy automatically?', 
+    a: 'Absolutely! TerraHarbor is designed to integrate seamlessly into your CI/CD pipelines. Deploy with Docker, or with our official Helm charts with minimal configuration.' 
   },
   {
-    q: 'Quelle est la compatibilité avec Terraform ?',
-    a: 'TerraHarbor implémente l\'API standard Terraform HTTP Backend, garantissant une compatibilité totale avec toutes les versions de Terraform. Aucune modification de vos configurations existantes n\'est nécessaire.'
+    q: 'What is the compatibility with Terraform?',
+    a: 'TerraHarbor implements the standard Terraform HTTP Backend API, ensuring full compatibility with all Terraform versions. No changes to your existing Terraform code are required.'
   }
 ];
 
@@ -43,7 +43,7 @@ export default function FAQSection() {
               fontSize: { xs: '2rem', md: '2.5rem' }
             }}
           >
-            Questions Fréquentes
+            Frequently Asked Questions
           </Typography>
           <Typography 
             variant="h6" 

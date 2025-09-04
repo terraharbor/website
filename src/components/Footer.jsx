@@ -8,16 +8,16 @@ import { colors } from '../theme/colors';
 
 const footerSections = [
   {
-    title: 'Produit',
+    title: 'Product',
     links: [
-      { label: 'Guide de démarrage', href: '#guide' },
-      { label: 'Fonctionnalités', href: '#features' },
-      { label: 'Tarifs', href: '#pricing' },
-      { label: 'Sécurité', href: '#security' }
+      { label: 'Getting Started Guide', href: '#guide' },
+      { label: 'Features', href: '#features' },
+      { label: 'Pricing', href: '#pricing' },
+      { label: 'Security', href: '#security' }
     ]
   },
   {
-    title: 'Ressources',
+    title: 'Resources',
     links: [
       { label: 'Documentation', href: '#' },
       { label: 'Blog', href: '#' },
@@ -72,8 +72,8 @@ export default function Footer() {
                   maxWidth: 300
                 }}
               >
-                La solution complète pour gérer vos fichiers Terraform state en toute sécurité. 
-                Haute disponibilité, chiffrement et gouvernance inclus.
+                The complete solution to securely manage your Terraform state files.
+                High availability, encryption, and governance included.
               </Typography>
               
               {/* Social links */}
@@ -149,7 +149,7 @@ export default function Footer() {
                 mb: 3
               }}
             >
-              Restez informé
+              Newsletter
             </Typography>
             
             <Typography 
@@ -160,12 +160,12 @@ export default function Footer() {
                 lineHeight: 1.6
               }}
             >
-              Recevez les dernières actualités et mises à jour de TerraHarbor.
+              Subscribe to get the latest news and updates.
             </Typography>
 
             <Box sx={{ display: 'flex', gap: 1 }}>
               <TextField
-                placeholder="Votre adresse email"
+                placeholder="Your email address"
                 variant="outlined"
                 size="small"
                 sx={{
@@ -231,7 +231,7 @@ export default function Footer() {
               textAlign: { xs: 'center', sm: 'left' }
             }}
           >
-            © 2025 TerraHarbor – Tous droits réservés.
+            © 2025 TerraHarbor – All rights reserved.
           </Typography>
           
           <Box sx={{ 
@@ -249,7 +249,7 @@ export default function Footer() {
                 '&:hover': { color: colors.primary.main }
               }}
             >
-              Politique de confidentialité
+              Privacy Policy
             </Link>
             <Link 
               href="#terms" 
@@ -260,7 +260,7 @@ export default function Footer() {
                 '&:hover': { color: colors.primary.main }
               }}
             >
-              Conditions d'utilisation
+              Terms and Conditions
             </Link>
           </Box>
         </Box>

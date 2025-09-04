@@ -8,7 +8,7 @@ This repository contains the landing page for TerraHarbor, a secure platform for
 - [Vite](https://vitejs.dev/) - Next generation frontend tooling for fast development
 - [Material-UI (MUI)](https://mui.com/) - React UI components library
 
-## Local development
+## Local Development
 
 Make sure to install the dependencies:
 
