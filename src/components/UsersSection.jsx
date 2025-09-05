@@ -4,17 +4,17 @@ import { colors } from '../theme/colors';
 const personas = [
   {
     role: 'Cloud Architect',
-    desc: "Déploie l'infrastructure avec Terraform. Besoin d'un backend fiable, sécurisé et versionné pour gérer les states complexes.",
+    desc: "Deploys infrastructure with Terraform. Needs a reliable, secure, and versioned backend to manage complex states.",
     avatar: '☁️',
   },
   {
-    role: 'Project Admin',
-    desc: "Gère les équipes, projets et tokens d'accès. Veut du contrôle d'accès granulaire et des fonctionnalités d'audit complètes.",
+    role: 'Project Administrator',
+    desc: "Manages teams, projects, and access tokens. Wants granular access control and complete audit features.",
     avatar: '🗂️',
   },
   {
     role: 'DevOps Engineer',
-    desc: "Automatise les déploiements et la gestion des infrastructures. A besoin d'un backend Terraform fiable, sécurisé et facile à intégrer dans les pipelines CI/CD.",
+    desc: "Automates deployments and infrastructure management. Needs a reliable, secure Terraform backend that's easy to integrate into CI/CD pipelines.",
     avatar: '🔧',
   },
 ];
@@ -41,7 +41,7 @@ export default function UsersSection() {
               fontSize: { xs: '2rem', md: '2.5rem' }
             }}
           >
-            Pour qui&nbsp;?
+            For Whom?
           </Typography>
           <Typography 
             variant="h6" 
@@ -52,7 +52,7 @@ export default function UsersSection() {
               mx: 'auto'
             }}
           >
-            Conçu pour répondre aux besoins de tous les profils techniques
+            Designed to meet the needs of all technical profiles
           </Typography>
         </Box>
         <Grid container spacing={4} justifyContent="center">

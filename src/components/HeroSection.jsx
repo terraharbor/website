@@ -60,11 +60,11 @@ export default function HeroSection() {
                   width: '100%'
                 }}
               >
-                Stockez et gérez vos{' '}
+                Store and manage your{' '}
                 <Box component="span" sx={{ color: colors.primary.main }}>
                   Terraform State Files
                 </Box>
-                {' '}en toute sécurité
+                {' '}securely
               </Typography>
 
               <Typography 
@@ -79,8 +79,8 @@ export default function HeroSection() {
                   textAlign: { xs: 'center', md: 'justify' }
                 }}
               >
-                Haute disponibilité, chiffrement AES-256, et gouvernance complète 
-                pour vos infrastructures cloud.
+                High availability, AES-256 encryption, and complete governance 
+                for your cloud infrastructures.
               </Typography>
 
               <Box 
@@ -111,7 +111,7 @@ export default function HeroSection() {
                     }
                   }}
                 >
-                  Commencer maintenant
+                  Get Started
                 </Button>
               </Box>
             </Box>

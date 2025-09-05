@@ -2,9 +2,9 @@ import { AppBar, Toolbar, Button, Box, Typography } from '@mui/material';
 import { colors } from '../theme/colors';
 
 const sections = [
-  { id: 'accueil', label: 'Accueil' },
-  { id: 'fonctionnalites', label: 'Fonctionnalités' },
-  { id: 'utilisateurs', label: 'Utilisateurs' },
+  { id: 'accueil', label: 'Home' },
+  { id: 'fonctionnalites', label: 'Features' },
+  { id: 'utilisateurs', label: 'Users' },
   { id: 'faq', label: 'FAQ' },
 ];
 
@@ -87,7 +87,7 @@ export default function Navbar() {
             }
           }}
         >
-          Démarrer
+          Get Started
         </Button>
       </Toolbar>
     </AppBar>
